@@ -7,10 +7,6 @@ resource "heroku_app" "my_awesome_app" {
   config_vars = {
     FOOBAR = "baz"
   }
-
-  buildpacks = [
-    "heroku/go"
-  ]
 }
 
 resource "heroku_build" "my_awesome_build" {
