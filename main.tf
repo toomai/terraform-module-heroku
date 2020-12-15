@@ -26,3 +26,4 @@ terraform {
       source = "hashicorp/heroku"
     }
   }
+}
