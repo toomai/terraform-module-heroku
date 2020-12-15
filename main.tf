@@ -10,7 +10,7 @@ resource "heroku_app" "my_awesome_app" {
 }
 
 resource "heroku_build" "my_awesome_build" {
-    app = "${heroku_app.my_awesome_app.id}"
+    app = heroku_app.my_awesome_app.id
     buildpacks = ["https://github.com/heroku/heroku-buildpack-python.git"]
     source = {
         url = "https://github.com/heroku/python-getting-started/archive/main.tar.gz"
