@@ -1,7 +1,7 @@
 variable "app_version" {
-    type = "string"
+    type = string
 }
 
 variable "app_name" {
-    type = "string"
+    type = string
 }
