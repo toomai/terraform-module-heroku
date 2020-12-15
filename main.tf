@@ -1,7 +1,9 @@
 resource "heroku_app" "my_awesome_app" {
   name   = "${var.app_name}"
   region = "eu"
-
+  buildpacks = [
+      "heroku/python"
+  ]
   config_vars = {
     FOOBAR = "baz"
   }
