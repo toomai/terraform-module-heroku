@@ -20,7 +20,7 @@ resource "heroku_build" "my_awesome_build" {
 
 terraform {
   required_providers {
-    aws = {
+    heroku = {
       source = "heroku/heroku"
     }
   }
