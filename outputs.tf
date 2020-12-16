@@ -1,5 +1,5 @@
 output "location" {
-    value = heroku_app.my_awesome_app.web_url
+    value = github_repository.my_awesome_repo.web_url
 }
 
 output "uid" {
