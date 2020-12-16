@@ -17,11 +17,3 @@ resource "heroku_build" "my_awesome_build" {
         version = var.app_version
     }
 }
-
-terraform {
-  required_providers {
-    heroku = {
-      source = "heroku/heroku"
-    }
-  }
-}
