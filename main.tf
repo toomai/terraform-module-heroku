@@ -14,14 +14,14 @@ resource "heroku_build" "my_awesome_build" {
     buildpacks = ["https://github.com/heroku/heroku-buildpack-python.git"]
     source = {
         url = "https://github.com/heroku/python-getting-started/archive/main.tar.gz"
-        version = "${var.app_version}"
+        version = var.app_version
     }
 }
 
 terraform {
   required_providers {
     aws = {
-      source = "hashicorp/heroku"
+      source = "heroku/heroku"
     }
   }
 }
