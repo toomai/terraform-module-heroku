@@ -1,7 +1,9 @@
 terraform {
   required_providers {
-    mycloud = {
+    heroku = {
       source  = "heroku/heroku"
     }
   }
 }
+
+provider "heroku" {}
